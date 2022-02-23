@@ -22,24 +22,22 @@ i)	#Use a linear search method to match the item in a list.
 Program for linear search method to match the item in a list
 Developed by:Manoj Guna Sundar Tella
 Ref no:21003796
-def linearsearch(array, n, k):
-
-    for i in range(0, n):
-        if (array [i] == k):
-            return i
+def lin(array,k):
+    for i in array:
+        if i==k:
+              return array.index(i)
     return -1
-
-array = eval(input())
-k =  eval(input())
-n = len(array)
+array=eval(input())
 array.sort()
-result = linearsearch(array, n, k)
-if(result == -1):
-    print(array)
-    print("Element not found")
+k=int(input())
+result=lin(array,k)
+if result==-1:
+      print(array)
+      print('Element not found')
 else:
     print(array)
-    print("Element found at index: ", result)
+    print('Element found at index: ',result)
+
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
